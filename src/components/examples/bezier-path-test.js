@@ -17,9 +17,15 @@ class BezierPathTest extends Sketchpad {
         this.bezierPath.controlPoints.push(new Point(150, 150), new Point(900, 500));
         // this.bezierPath.controlPoints.push(new Point(150, 150), new Point(350, 375), new Point(700, 275), new Point(900, 500));
 
+        // 默认线性速度
         this.timingFunction = new TimingFunction();
+        // 先快后慢，开始的时候因为速度太快，导致开头丢失0.3的percent，所以开头0.3的曲线丢失或者间隔太大变成直线
         // this.timingFunction.timingFunction = (timingFunction) => {
         //     return timingFunction.startPercent + Math.pow(timingFunction.time - timingFunction.startTime, 1/4);
+        // };
+        // 先慢后快
+        // this.timingFunction.timingFunction = (timingFunction) => {
+        //     return timingFunction.startPercent + Math.pow(timingFunction.time - timingFunction.startTime, 4);
         // };
         this.timingFunction.startPercent = this.bezierPath.startPercent;
         this.timingFunction.endPercent = this.bezierPath.endPercent;
