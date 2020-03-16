@@ -1,0 +1,47 @@
+{
+  "defaultSeverity": "warning",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**"
+    ]
+  },
+  "rules": {
+    // 缩进
+    "indent": [true, "spaces", 2],
+    // interface命名规则
+    "interface-name": false,
+    // 空行
+    "no-consecutive-blank-lines": false,
+    // 对象key排序
+    "object-literal-sort-keys": false,
+    // import排序
+    "ordered-imports": false,
+    // 引号
+    "quotemark": [true, "single"],
+    // 数组和对象键值对最后一个逗号， never参数：不能带末尾的逗号, always参数：必须带末尾的逗号，
+    // always-multiline：多行模式必须带逗号，单行模式不能带逗号
+    "comma-dangle": ["error", "never"],
+    "trailing-comma": [true, {
+      "singleline": "never",
+      "multiline": {
+        "objects": "never",
+        "arrays": "never",
+        "functions": "never",
+        "typeLiterals": "never"
+      }}],
+    // 变量名规则：
+    // 禁止使用关键字：ban-keywords、校验格式：check-format、allow-pascal-case：允许大写开头驼峰、可以下划线开头：allow-leading-underscore
+    "variable-name": {
+      "options": [
+        "ban-keywords",
+        "check-format",
+        "allow-pascal-case",
+        "allow-leading-underscore"
+      ]
+    },
+    "max-classes-per-file": [false, 1]
+  }
+}
