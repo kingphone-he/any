@@ -5,4 +5,3 @@ module.exports = {
     // assetsDir: 'static',
     // indexPath: 'index.html'
 };
-
