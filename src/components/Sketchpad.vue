@@ -25,7 +25,7 @@
             this.sketchpad && (this.$props.sketchpad.onCallback = (type) => {
                 if (type === BezierPathTest.CallbackType.UpdateBezierPath) {
                     this.sketchpad && this.sketchpad.destroy();
-                    this.sketchpad && this.sketchpad.drawPathAnimated();
+                    this.sketchpad && this.sketchpad.drawPathAnimated(true);
                 }
             });
         },
