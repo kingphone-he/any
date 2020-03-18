@@ -53,10 +53,10 @@ class BezierPathTest extends Sketchpad {
         this.bezierPath.startPoint = new Point(50, 500);
         this.bezierPath.endPoint = new Point(1000, 150);
         // this.bezierPath.controlPoints.push(new Point(150, 0));
-        // this.bezierPath.controlPoints.push(new Point(150, 150), new Point(900, 500));
+        this.bezierPath.controlPoints.push(new Point(150, 150), new Point(900, 500));
         // this.bezierPath.controlPoints.push(new Point(150, 150), new Point(320, 450), new Point(450, 900));
         // this.bezierPath.controlPoints.push(new Point(150, 150), new Point(320, 450), new Point(450, 900), new Point(0, 20));
-        this.bezierPath.controlPoints.push(new Point(150, 150), new Point(320, 450), new Point(450, 900), new Point(0, 0), new Point(100, 20));
+        // this.bezierPath.controlPoints.push(new Point(150, 150), new Point(320, 450), new Point(450, 900), new Point(0, 0), new Point(100, 20));
         // this.bezierPath.controlPoints.push(new Point(150, 150), new Point(350, 375), new Point(700, 275), new Point(900, 500));
     }
 
